@@ -2,6 +2,7 @@ import User from "../models/userModel.js";
 import { hashPassword } from "../helper/authHelper.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import validator from "validator";
 
 export const getAllUsersController = async (req, res) => {
   try {
@@ -38,8 +39,17 @@ export const registerUserController = async (req, res) => {
 
 export const loginUserController = async (req, res) => {
   try {
-    const { email, password } = req.body;
-    const user = await User.findOne({ email });
+    const { identifier, password } = req.body;
+    console.log("Resquest Body: ", req.body);
+    let user;
+
+    if (validator.isEmail(identifier)) {
+      user = await User.findOne({ email: identifier });
+    } else {
+      user = await User.findOne({ phone: identifier });
+    }
+
+    console.log("User", user);
     if (!user) {
       return res.status(401).json({
         message: "Invalid Credentials",

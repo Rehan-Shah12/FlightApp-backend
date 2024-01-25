@@ -54,16 +54,15 @@ export const createFlightsController = async (req, res) => {
 export const searchFlightsController = async (req, res) => {
   try {
     const filters = req.query;
-    // console.log("Filters: ", filters);
 
-    // const query = {};
+    const regexFilters = {};
+    for (const [key, value] of Object.entries(filters)) {
+      if (value) {
+        regexFilters[key] = { $regex: new RegExp(value, "i") };
+      }
+    }
 
-    // for (const key in filters) {
-    //   query[key] = filters[key];
-    // }
-
-    // console.log("Keys: ", query);
-    const flights = await Flight.find(filters);
+    const flights = await Flight.find(regexFilters);
 
     res.status(200).json({ flights });
   } catch (error) {

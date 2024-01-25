@@ -30,12 +30,6 @@ const flightSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  classes: {
-    type: String,
-    enum: ["business", "economy"],
-    default: "economy",
-    required: true,
-  },
 
   seats: [
     {
@@ -50,6 +44,12 @@ const flightSchema = new mongoose.Schema({
       },
       price: {
         type: Number,
+        required: true,
+      },
+      classes: {
+        type: String,
+        enum: ["business", "economy"],
+        default: "economy",
         required: true,
       },
     },
