@@ -3,6 +3,7 @@ import {
   registerUserController,
   getAllUsersController,
   loginUserController,
+  getUserByIdController,
 } from "../controllers/authController.js";
 const router = Router();
 
@@ -15,13 +16,7 @@ router.post("/register", registerUserController);
 //Login User
 router.post("/login", loginUserController);
 
-// //Get Single User By Id
-// router.get("/:id", getUserByIdController);
-
-// //Delete User By Id
-// router.delete("/delete/:id", deleteUserByIdController);
-
-// //Update User By Id
-// router.patch("/update/:id", updateUserByIdController);
+//Get Single User By Id
+router.get("/:id", getUserByIdController);
 
 export default router;

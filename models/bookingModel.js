@@ -12,15 +12,19 @@ const bookingSchema = new mongoose.Schema(
       ref: "flights",
       required: true,
     },
-    seatsBooked: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "flights.seats",
-        required: true,
-      },
-    ],
+    seatNumber: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     totalPrice: {
       type: Number,
+      required: true,
+    },
+    classes: {
+      type: String,
+      enum: ["business", "economy"],
+      default: "economy",
       required: true,
     },
   },

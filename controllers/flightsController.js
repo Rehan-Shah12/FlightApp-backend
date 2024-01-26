@@ -71,3 +71,48 @@ export const searchFlightsController = async (req, res) => {
       .json({ message: "Server Error, Searching Flights Failed", error });
   }
 };
+
+export const getFlightByIdController = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const flight = await Flight.findById(id);
+    if (!flight) {
+      return res.status(404).json({ message: "Flight Not Found" });
+    }
+    res.status(200).json(flight);
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Server Error, Getting Flight By Id Failed", error });
+  }
+};
+
+export const updateFlightByIdController = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { seatNumber } = req.body;
+
+    const response = await Flight.findOneAndUpdate(
+      { _id: id, "seats.seatNumber": seatNumber },
+      { $set: { "seats.$.status": "booked" } },
+      { new: true }
+    );
+
+    if (!response) {
+      return res.status(404).json({ message: "Flight or Seat Not Found" });
+    }
+
+    const seatToUpdate = response.seats.find(
+      (seat) => seat.seatNumber === seatNumber
+    );
+
+    console.log("Seat To Update:", seatToUpdate);
+
+    res.status(200).json(response);
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Server Error, Updating Flight By Id Failed", error });
+  }
+};

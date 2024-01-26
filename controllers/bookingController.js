@@ -2,9 +2,16 @@ import Booking from "../models/bookingModel.js";
 
 export const createBookingController = async (req, res) => {
   try {
-    const { user, flight, seatsBooked, totalPrice } = req.body;
+    const { user, flight, classes, seatNumber, totalPrice } = req.body;
 
-    const booking = new Booking({ user, flight, seatsBooked, totalPrice });
+    console.log("SeatNumber: ", seatNumber);
+    const booking = new Booking({
+      user,
+      flight,
+      classes,
+      seatNumber,
+      totalPrice,
+    });
     await booking.save();
     res.status(200).json(booking);
   } catch (error) {
