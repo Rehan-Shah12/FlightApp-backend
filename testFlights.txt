@@ -1,0 +1,900 @@
+[{
+  "_id": {
+    "$oid": "65b4cbb68ec1a833b4d035a7"
+  },
+  "flightNumber": "PIA456",
+  "departureCity": "Islamabad",
+  "arrivalCity": "London",
+  "departureTime": {
+    "$date": "2024-02-10T08:30:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-02-10T14:30:00.000Z"
+  },
+  "planeType": "PIA",
+  "seats": [
+    {
+      "seatNumber": "E1",
+      "status": "booked",
+      "price": 1000,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbb68ec1a833b4d035a8"
+      }
+    },
+    {
+      "seatNumber": "F1",
+      "status": "available",
+      "price": 2000,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbb68ec1a833b4d035a9"
+      }
+    },
+    {
+      "seatNumber": "G1",
+      "status": "available",
+      "price": 1200,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbb68ec1a833b4d035aa"
+      }
+    },
+    {
+      "seatNumber": "H1",
+      "status": "available",
+      "price": 1800,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbb68ec1a833b4d035ab"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4cbd48ec1a833b4d035ad"
+  },
+  "flightNumber": "BA789",
+  "departureCity": "London",
+  "arrivalCity": "Paris",
+  "departureTime": {
+    "$date": "2024-03-15T12:30:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-03-15T14:00:00.000Z"
+  },
+  "planeType": "British Airways",
+  "seats": [
+    {
+      "seatNumber": "I1",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035ae"
+      }
+    },
+    {
+      "seatNumber": "J1",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035af"
+      }
+    },
+    {
+      "seatNumber": "K1",
+      "status": "available",
+      "price": 1200,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b0"
+      }
+    },
+    {
+      "seatNumber": "L1",
+      "status": "available",
+      "price": 2000,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b1"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4cbd48ec1a833b4d035b3"
+  },
+  "flightNumber": "DL321",
+  "departureCity": "New York",
+  "arrivalCity": "Los Angeles",
+  "departureTime": {
+    "$date": "2024-04-05T08:00:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-04-05T10:30:00.000Z"
+  },
+  "planeType": "Delta Airlines",
+  "seats": [
+    {
+      "seatNumber": "M1",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b4"
+      }
+    },
+    {
+      "seatNumber": "N1",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b5"
+      }
+    },
+    {
+      "seatNumber": "O1",
+      "status": "available",
+      "price": 1000,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b6"
+      }
+    },
+    {
+      "seatNumber": "P1",
+      "status": "available",
+      "price": 1800,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035b7"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4cbd48ec1a833b4d035b9"
+  },
+  "flightNumber": "AF456",
+  "departureCity": "Paris",
+  "arrivalCity": "Tokyo",
+  "departureTime": {
+    "$date": "2024-05-20T15:45:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-05-21T08:00:00.000Z"
+  },
+  "planeType": "Air France",
+  "seats": [
+    {
+      "seatNumber": "Q1",
+      "status": "available",
+      "price": 1100,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035ba"
+      }
+    },
+    {
+      "seatNumber": "R1",
+      "status": "available",
+      "price": 1700,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035bb"
+      }
+    },
+    {
+      "seatNumber": "S1",
+      "status": "available",
+      "price": 1300,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035bc"
+      }
+    },
+    {
+      "seatNumber": "T1",
+      "status": "available",
+      "price": 2200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035bd"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4cbd48ec1a833b4d035bf"
+  },
+  "flightNumber": "SQ789",
+  "departureCity": "Singapore",
+  "arrivalCity": "Sydney",
+  "departureTime": {
+    "$date": "2024-06-10T09:00:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-06-10T14:30:00.000Z"
+  },
+  "planeType": "Singapore Airlines",
+  "seats": [
+    {
+      "seatNumber": "U1",
+      "status": "available",
+      "price": 1200,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c0"
+      }
+    },
+    {
+      "seatNumber": "V1",
+      "status": "available",
+      "price": 2000,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c1"
+      }
+    },
+    {
+      "seatNumber": "W1",
+      "status": "available",
+      "price": 1500,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c2"
+      }
+    },
+    {
+      "seatNumber": "X1",
+      "status": "available",
+      "price": 2500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c3"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4cbd48ec1a833b4d035c5"
+  },
+  "flightNumber": "LH456",
+  "departureCity": "Frankfurt",
+  "arrivalCity": "Beijing",
+  "departureTime": {
+    "$date": "2024-07-25T13:00:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-07-26T05:30:00.000Z"
+  },
+  "planeType": "Lufthansa",
+  "seats": [
+    {
+      "seatNumber": "Y1",
+      "status": "available",
+      "price": 1000,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c6"
+      }
+    },
+    {
+      "seatNumber": "Z1",
+      "status": "available",
+      "price": 1600,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c7"
+      }
+    },
+    {
+      "seatNumber": "AA1",
+      "status": "available",
+      "price": 1300,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c8"
+      }
+    },
+    {
+      "seatNumber": "BB1",
+      "status": "available",
+      "price": 2100,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4cbd48ec1a833b4d035c9"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4d6e58ec1a833b4d03b2d"
+  },
+  "flightNumber": "AA987",
+  "departureCity": "New York",
+  "arrivalCity": "Los Angeles",
+  "departureTime": {
+    "$date": "2024-08-15T08:00:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-08-15T10:30:00.000Z"
+  },
+  "planeType": "American Airlines",
+  "seats": [
+    {
+      "seatNumber": "A1",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b2e"
+      }
+    },
+    {
+      "seatNumber": "A2",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b2f"
+      }
+    },
+    {
+      "seatNumber": "A3",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b30"
+      }
+    },
+    {
+      "seatNumber": "A4",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b31"
+      }
+    },
+    {
+      "seatNumber": "A5",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b32"
+      }
+    },
+    {
+      "seatNumber": "A6",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b33"
+      }
+    },
+    {
+      "seatNumber": "A7",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b34"
+      }
+    },
+    {
+      "seatNumber": "A8",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b35"
+      }
+    },
+    {
+      "seatNumber": "A9",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b36"
+      }
+    },
+    {
+      "seatNumber": "A10",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b37"
+      }
+    },
+    {
+      "seatNumber": "B1",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b38"
+      }
+    },
+    {
+      "seatNumber": "B2",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b39"
+      }
+    },
+    {
+      "seatNumber": "B3",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3a"
+      }
+    },
+    {
+      "seatNumber": "B4",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3b"
+      }
+    },
+    {
+      "seatNumber": "B5",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3c"
+      }
+    },
+    {
+      "seatNumber": "B6",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3d"
+      }
+    },
+    {
+      "seatNumber": "B7",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3e"
+      }
+    },
+    {
+      "seatNumber": "B8",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b3f"
+      }
+    },
+    {
+      "seatNumber": "B9",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b40"
+      }
+    },
+    {
+      "seatNumber": "B10",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d6e58ec1a833b4d03b41"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b4d7688ec1a833b4d03bbc"
+  },
+  "flightNumber": "XYZ123",
+  "departureCity": "San Francisco",
+  "arrivalCity": "Chicago",
+  "departureTime": {
+    "$date": "2024-09-01T09:30:00.000Z"
+  },
+  "arrivalTime": {
+    "$date": "2024-09-01T13:00:00.000Z"
+  },
+  "planeType": "XYZ Airlines",
+  "seats": [
+    {
+      "seatNumber": "A1",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bbd"
+      }
+    },
+    {
+      "seatNumber": "A2",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bbe"
+      }
+    },
+    {
+      "seatNumber": "A3",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bbf"
+      }
+    },
+    {
+      "seatNumber": "A4",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc0"
+      }
+    },
+    {
+      "seatNumber": "A5",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc1"
+      }
+    },
+    {
+      "seatNumber": "A6",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc2"
+      }
+    },
+    {
+      "seatNumber": "A7",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc3"
+      }
+    },
+    {
+      "seatNumber": "A8",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc4"
+      }
+    },
+    {
+      "seatNumber": "A9",
+      "status": "available",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc5"
+      }
+    },
+    {
+      "seatNumber": "A10",
+      "status": "booked",
+      "price": 800,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc6"
+      }
+    },
+    {
+      "seatNumber": "B1",
+      "status": "booked",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc7"
+      }
+    },
+    {
+      "seatNumber": "B2",
+      "status": "booked",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc8"
+      }
+    },
+    {
+      "seatNumber": "B3",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bc9"
+      }
+    },
+    {
+      "seatNumber": "B4",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bca"
+      }
+    },
+    {
+      "seatNumber": "B5",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bcb"
+      }
+    },
+    {
+      "seatNumber": "B6",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bcc"
+      }
+    },
+    {
+      "seatNumber": "B7",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bcd"
+      }
+    },
+    {
+      "seatNumber": "B8",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bce"
+      }
+    },
+    {
+      "seatNumber": "B9",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bcf"
+      }
+    },
+    {
+      "seatNumber": "B10",
+      "status": "available",
+      "price": 1200,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd0"
+      }
+    },
+    {
+      "seatNumber": "C1",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd1"
+      }
+    },
+    {
+      "seatNumber": "C2",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd2"
+      }
+    },
+    {
+      "seatNumber": "C3",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd3"
+      }
+    },
+    {
+      "seatNumber": "C4",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd4"
+      }
+    },
+    {
+      "seatNumber": "C5",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd5"
+      }
+    },
+    {
+      "seatNumber": "C6",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd6"
+      }
+    },
+    {
+      "seatNumber": "C7",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd7"
+      }
+    },
+    {
+      "seatNumber": "C8",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd8"
+      }
+    },
+    {
+      "seatNumber": "C9",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bd9"
+      }
+    },
+    {
+      "seatNumber": "C10",
+      "status": "available",
+      "price": 900,
+      "classes": "economy",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bda"
+      }
+    },
+    {
+      "seatNumber": "D1",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bdb"
+      }
+    },
+    {
+      "seatNumber": "D2",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bdc"
+      }
+    },
+    {
+      "seatNumber": "D3",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bdd"
+      }
+    },
+    {
+      "seatNumber": "D4",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bde"
+      }
+    },
+    {
+      "seatNumber": "D5",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03bdf"
+      }
+    },
+    {
+      "seatNumber": "D6",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03be0"
+      }
+    },
+    {
+      "seatNumber": "D7",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03be1"
+      }
+    },
+    {
+      "seatNumber": "D8",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03be2"
+      }
+    },
+    {
+      "seatNumber": "D9",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03be3"
+      }
+    },
+    {
+      "seatNumber": "D10",
+      "status": "available",
+      "price": 1500,
+      "classes": "business",
+      "_id": {
+        "$oid": "65b4d7688ec1a833b4d03be4"
+      }
+    }
+  ],
+  "__v": 0
+}]

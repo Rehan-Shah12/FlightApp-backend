@@ -2,13 +2,9 @@ import jwt from "jsonwebtoken";
 
 export const requireSignIn = async (req, res, next) => {
   try {
-    console.log("Req.Header.Auth", req.headers.authorization);
-    const decode = jwt.verify(
-      req.headers.authorization,
-      process.env.JWT_SECRET
-    );
+    const token = req.headers.authorization?.split(" ")[1];
 
-    console.log("Decode: ", decode);
+    const decode = jwt.verify(token, process.env.JWT_SECRET);
 
     req.user = decode;
     next();

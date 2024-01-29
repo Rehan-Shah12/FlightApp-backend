@@ -2,8 +2,20 @@ import Flight from "../models/flightModel.js";
 
 export const getAllFlightsController = async (req, res) => {
   try {
-    const flights = await Flight.find();
-    res.status(200).json(flights);
+    const { page = 1, pageSize = 3 } = req.query;
+
+    const totalFlightsCount = await Flight.countDocuments();
+
+    const flights = await Flight.find()
+      .limit(parseInt(pageSize))
+      .skip((parseInt(page) - 1) * parseInt(pageSize));
+
+    const totalPages = Math.ceil(totalFlightsCount / pageSize);
+
+    res.status(200).json({
+      flights,
+      totalPages,
+    });
   } catch (error) {
     res
       .status(500)
@@ -64,6 +76,10 @@ export const searchFlightsController = async (req, res) => {
 
     const flights = await Flight.find(regexFilters);
 
+    if (!flights) {
+      return res.status(400).json({ message: "Flight does not exist" });
+    }
+
     res.status(200).json({ flights });
   } catch (error) {
     res
@@ -106,8 +122,6 @@ export const updateFlightByIdController = async (req, res) => {
     const seatToUpdate = response.seats.find(
       (seat) => seat.seatNumber === seatNumber
     );
-
-    console.log("Seat To Update:", seatToUpdate);
 
     res.status(200).json(response);
   } catch (error) {
