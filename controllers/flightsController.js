@@ -67,14 +67,17 @@ export const searchFlightsController = async (req, res) => {
   try {
     const filters = req.query;
 
-    const regexFilters = {};
-    for (const [key, value] of Object.entries(filters)) {
-      if (value) {
-        regexFilters[key] = { $regex: new RegExp(value, "i") };
-      }
-    }
+    console.log("Filters", req.query);
 
-    const flights = await Flight.find(regexFilters);
+    // const regexFilters = {};
+    // for (const [key, value] of Object.entries(filters)) {
+    //   if (value) {
+    //     regexFilters[key] = { $regex: new RegExp(value, "i") };
+    //   }
+    // }
+    // console.log("Regex Filter: ", regexFilters);
+
+    const flights = await Flight.find(req.query);
 
     if (!flights) {
       return res.status(400).json({ message: "Flight does not exist" });
